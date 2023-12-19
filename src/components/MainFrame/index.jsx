@@ -1,8 +1,8 @@
 import Display from "../Display"
 import TextBox from "../TextBox"
-import Void from "../Void"
 import { useState, useRef, useEffect } from "react"
 import { talk } from "./script"
+
 
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234'.split('')
 const boards = []
@@ -14,36 +14,29 @@ for (var i = 6; i < 31; i = i + 6) {
 const MainFrame = () => {
   const [exibit, setExibit] = useState(boards);
   const [text, setText] = useState('');
-  const [reset, setReset] = useState(false);
   const refsArray = Array.from({ length: 8 }, () => useRef());
   const delay = 2000;
-
   const timeoutRef = useRef(null); // Keep track of the current timeout
 
   useEffect(() => {
     let currentIndex = 0;
-
     const focusNextRef = () => {
-      if (reset) {
-        currentIndex = 0;
-        setReset(false);
-      }
-
       refsArray[currentIndex].current.focus();
       currentIndex = (currentIndex + 1) % refsArray.length;
-
       // Set the timeout and store its reference in the timeoutRef
       timeoutRef.current = setTimeout(focusNextRef, delay);
     };
-
     // Start the initial timeout
     focusNextRef();
-
     // Cleanup function to clear the timeout on component unmount or when resetting
     return () => {
+      if(currentIndex==1){
+        refsArray[currentIndex-1].current.blur();
+      }
       clearTimeout(timeoutRef.current);
     };
-  }, [reset, refsArray, delay]);
+  }, [refsArray, delay]);
+
 
   if (exibit[0].length > 1) {
     return (
@@ -105,7 +98,12 @@ const MainFrame = () => {
             letras={["Voltar"]}
             css={"col-start-1 row-start-2"}
           />
-          <Void reff={refsArray[7]} css={"col-start-3 row-start-2"} />
+                    <Display
+            reff={refsArray[7]}
+            onclick={() => setExibit(boards)}
+            letras={["Voltar"]}
+            css={"col-start-3 row-start-2"}
+          />
         </div>
       </div>
     );

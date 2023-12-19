@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "blink-detection": "^1.2.1",
+    "face-api.js": "^0.20.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
