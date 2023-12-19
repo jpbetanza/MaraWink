@@ -17,7 +17,7 @@ Existem vários métodos de comunicação com pacientes com ELA, e um deles envo
 
 ## Projeto Mara - Versão 3
 
-O **Projeto Mara** foi recentemente atualizado para a sua versão , que utiliza as tecnologias do [Tailwind CSS](https://tailwindcss.com/) e [React](https://react.dev/) para melhorar a escalabilidade do código. Diferente da versão anterior, o projeto permite que os pacientes usem um teclado virtual que simula o quadro físico, facilitando a comunicação por meio do piscar de um dos olhos graças à blbioteca [Blink-Detection](https://github.com/theankurkedia/blink-detection) criada por Ankur Kedia. Com a ajuda de um computador ou tablet com câmera, os pacientes podem escrever e pronunciar textos de forma autônoma por meio desta aplicação web.
+O **Projeto Mara** foi recentemente atualizado para a sua versão , que utiliza as tecnologias do [Tailwind CSS](https://tailwindcss.com/) e [React](https://react.dev/) para melhorar a escalabilidade do código. Diferente da versão anterior, o projeto permite que os pacientes usem um teclado virtual que simula o quadro físico, facilitando a comunicação por meio do piscar de um dos olhos graças à blbioteca [Blink-Detection](https://github.com/theankurkedia/blink-detection) criada por [Ankur Kedia](https://github.com/theankurkedia). Com a ajuda de um computador ou tablet com câmera, os pacientes podem escrever e pronunciar textos de forma autônoma por meio desta aplicação web.
 
 Para mais informações sobre a versão anterior do projeto, visite o [repositório anterior](https://github.com/jpbetanza/Mara2).
 
