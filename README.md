@@ -21,9 +21,6 @@ O **Projeto Mara** foi recentemente atualizado para a sua versão , que utiliza 
 
 Para mais informações sobre a versão anterior do projeto, visite o [repositório anterior](https://github.com/jpbetanza/Mara2).
 
-### Digitação
-> ![Teste de escrita](teste.gif)
-
 ## Experimentar o projeto
 
 Há duas maneiras de iniciar o projeto, a primeira delas é acessando o site hosteado pelo vercel: [Mara](https://mara3.vercel.app/)
