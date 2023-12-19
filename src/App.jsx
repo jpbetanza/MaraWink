@@ -3,9 +3,10 @@ import MainFrame from './components/MainFrame'
 import Video from './components/Video'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [init, setInit] = useState(false)
 
   return (
+
     <div>
       <MainFrame/>
       <Video/>
