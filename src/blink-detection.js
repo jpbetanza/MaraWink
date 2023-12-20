@@ -3,7 +3,7 @@ import * as tf from '@tensorflow/tfjs-core';
 import '@tensorflow/tfjs-backend-webgl';
 
 let model, video, event, blinkRate;
-const VIDEO_SIZE = 500;
+const VIDEO_SIZE = 400;
 let blinkCount = 0;
 let winkCount = 0;
 let tempBlinkRate = 0;

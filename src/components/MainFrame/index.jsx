@@ -40,7 +40,9 @@ const MainFrame = () => {
 
   if (exibit[0].length > 1) {
     return (
+      
       <div className="bg-black w-screen h-screen p-3">
+        <video id="video1" className="hidden"/>
         <div className="grid grid-cols-3 grid-rows-3 gap-5 h-full w-full items-center">
           {exibit.map((x, index) => (
             <Display
