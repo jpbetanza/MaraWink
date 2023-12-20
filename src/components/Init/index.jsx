@@ -14,6 +14,7 @@ const Init = ({onclick}) => {
     return(
         <div className="flex flex-col items-center gap-8">
             <h1 className="text-center p-5 text-white">Quando a câmera carregar, pisque um olho para iniciar o teclado</h1>
+            <p className="text-white">Você pode digitar piscando um olho no quadro contendo a letra desejada</p>
             <button ref={buttonRef} onClick={onclick} className="rounded-lg text-white bg-slate-700 px-3 py-2 focus">Abrir teclado</button>
         </div>
     )
